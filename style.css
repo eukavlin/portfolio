@@ -154,6 +154,7 @@ header a:focus {
     padding-top: 1vh;
     text-align: center;
 }
+
 .content {
     box-sizing: border-box;
     min-height: 100vh;
@@ -255,4 +256,22 @@ header a:focus {
 .small {
   font-weight: 300;
   font-size: 1.25em;
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .eliselogo {
+    padding-top: 10vh;
+    width: 80vw;
+    height: auto;
+  }
+
+  #navigation {
+    font-size: 0.75em;
+  }
+
+  #navigation a {
+    padding: 10px;
+  }
 }
