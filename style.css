@@ -51,6 +51,7 @@ body {
 
 h1 {
     font-size: 1.25em;
+    max-width: 100vw;
 }
 
 #main .title {
@@ -286,11 +287,11 @@ header a:focus {
   }
 
   #navigation {
-    font-size: 1em;
+    font-size: 0.85em;
   }
 
   #navigation a {
-    padding: 15px;
+    padding: 12.5px;
   }
 
   .gotop {
@@ -327,7 +328,9 @@ header a:focus {
 }
 
 @media screen and (max-width: 400px) {
-
+  .title {
+    font-size: 2em;
+  }
   .eliselogo {
     width: 85vw;
     height: auto;
