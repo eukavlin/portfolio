@@ -271,8 +271,12 @@ header a:focus {
 
 
 @media screen and (max-width: 640px) {
+  #main {
+    padding-top: 10vh;
+  }
+
   .eliselogo {
-    width: 80vw;
+    width: 60vw;
     height: auto;
   }
 
@@ -304,4 +308,15 @@ header a:focus {
     font-size: 0.75em;
   }
 
+}
+
+@media screen and (max-width: 400px) {
+  #main {
+    padding-top: 20vh;
+  }
+
+  .eliselogo {
+    width: 70vw;
+    height: auto;
+  }
 }
