@@ -117,6 +117,10 @@ h1 {
     50% {width: 0;}
     100% {width: 100;}
 }
+@keyframes gotop {
+    0% {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
+}
 
 header {
     height: 10vh;
@@ -185,6 +189,11 @@ header a:focus {
     position: fixed;
     right: 2%;
     bottom: -0.5%;
+}
+
+.gotop:hover {
+  animation: gotop 0.5s infinite;
+  animation-direction: alternate;
 }
 
 .row {
@@ -273,5 +282,10 @@ header a:focus {
 
   #navigation a {
     padding: 10px;
+  }
+
+  .gotop {
+    bottom: 1.5vh;
+    right: 2vw;
   }
 }
