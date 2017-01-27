@@ -59,7 +59,7 @@ h1 {
 .title {
     display: flex;
     flex-direction: row;
-    font-family: 'decterm', Arial, sans-serif;
+    font-family: 'decterm', Courier, monospace;
     color: #000;
     font-size: 40px;
 }
