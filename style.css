@@ -1,0 +1,258 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'decterm';
+    src: url(fonts/_decterm.ttf);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+#main, #portfolio, #aboutme, #contact {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#main {
+    height: 90vh;
+    padding: 20px;
+    background-image: url(img/TL-001.jpg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.eliselogo {
+    height: 60vh;
+}
+
+h1 {
+    font-size: 1.25em;
+}
+
+#main .title {
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    font-family: 'decterm', Arial, sans-serif;
+    color: #000;
+    font-size: 40px;
+}
+
+#main .subtitle.light.subcaption {
+    font-size: 25px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.caption {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 7em;
+    animation: type 2s steps(17, end);
+}
+
+.subtitle.subcaption {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 10.5em;
+  animation: subtype 4s steps(20, end);
+}
+
+.cursor {
+    animation: clignote 0.4s infinite;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes clignote {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    30% {
+        width: 0;
+    }
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes subtype {
+    0% {width: 0;}
+    50% {width: 0;}
+    100% {width: 100;}
+}
+
+header {
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFF;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s;
+}
+
+header a {
+    padding: 20px;
+    font-weight: 300;
+    font-size: 1.25em;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    text-decoration: overline underline;
+    color: #FFF;
+}
+
+header a:focus {
+    color: #000;
+}
+
+.contentmain {
+    box-sizing: border-box;
+    min-height: 90vh;
+    padding-top: 1vh;
+    text-align: center;
+}
+.content {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding-top: 7.5vh;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.fixed a, .fixed a:hover {
+  color: #000;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.gotop {
+    position: fixed;
+    right: 2%;
+    bottom: -0.5%;
+}
+
+.row {
+  width: 100%;
+  text-align: left;
+  padding: 1% 5%;
+  margin: 0;
+}
+.col-md-4 {
+  padding: 0;
+}
+.mainimg {
+  position: relative;
+  width: 90%;
+  margin: 5%;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.hover {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.90);
+    width: 90%;
+    height: calc(90% + 1px);
+    bottom: -1px;
+    right: 0;
+    opacity: 0;
+    margin: 5%;
+    transition: opacity 0.5s;
+
+}
+
+.hover:hover {
+  opacity: 1;
+}
+
+.legend {
+  position: relative;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.legend p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+
+
+}
+.legend a, .protitle, .desc, .small {
+  text-decoration: none;
+  color: #000;
+}
+
+.protitle  {
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+
+.desc {
+  font-style: italic;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.small {
+  font-weight: 300;
+  font-size: 1.25em;
+}
