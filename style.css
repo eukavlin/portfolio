@@ -311,12 +311,9 @@ header a:focus {
 }
 
 @media screen and (max-width: 400px) {
-  #main {
-    padding-top: 20vh;
-  }
 
   .eliselogo {
-    width: 70vw;
+    width: 85vw;
     height: auto;
   }
 }
