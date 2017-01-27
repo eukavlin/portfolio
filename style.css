@@ -19,8 +19,8 @@ html {
 }
 
 @font-face {
-    font-family: 'decterm';
-    src: url(fonts/_decterm.ttf);
+    font-family: 'terminalvector';
+    src: url(fonts/TerminalVector.ttf);
 }
 
 body {
@@ -59,7 +59,7 @@ h1 {
 .title {
     display: flex;
     flex-direction: row;
-    font-family: 'decterm', Arial, sans-serif;
+    font-family: 'terminalvector', Arial, sans-serif;
     color: #000;
     font-size: 40px;
 }
@@ -73,14 +73,15 @@ h1 {
 .caption {
     white-space: nowrap;
     overflow: hidden;
-    width: 7em;
+    width: 14em;
     animation: type 2s steps(17, end);
 }
 
 .subtitle.subcaption {
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  width: 10.5em;
+  width: 14em;
   animation: subtype 4s steps(20, end);
 }
 
@@ -154,8 +155,11 @@ header a:focus {
 }
 
 .contentmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
-    min-height: 90vh;
     padding-top: 1vh;
     text-align: center;
 }
@@ -193,6 +197,7 @@ header a:focus {
 }
 
 .gotop:hover {
+  cursor: pointer;
   animation: gotop 0.5s infinite;
   animation-direction: alternate;
 }
@@ -281,15 +286,15 @@ header a:focus {
   }
 
   #navigation {
-    font-size: 0.75em;
+    font-size: 1em;
   }
 
   #navigation a {
-    padding: 10px;
+    padding: 15px;
   }
 
   .gotop {
-    bottom: 1.5vh;
+    bottom: 0.9vh;
     right: 2vw;
   }
 
@@ -307,6 +312,17 @@ header a:focus {
   .small {
     font-size: 0.75em;
   }
+
+  .hover {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.90);
+      width: 90%;
+      height: calc(90% + 1px);
+      bottom: 0px;
+      right: 0;
+      opacity: 0;
+      margin: 5%;
+      transition: opacity 0.5s;
 
 }
 
