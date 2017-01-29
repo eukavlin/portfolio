@@ -45,7 +45,7 @@ $(document).ready(function() {
 $(function() {
     let mainheight = document.getElementById('main').offsetHeight;
     $(window).scroll(function() { //Au scroll dans la fenetre on déclenche la fonction
-        if ($(this).scrollTop() > -80 + mainheight) { //quand la fin de la main page est atteinte.
+        if ($(this).scrollTop() > mainheight - 80) { //quand la fin de la main page est atteinte.
             $('#navigation').addClass("fixed"); //on ajoute la classe "fixNavigation" à <div id="navigation">
         } else {
             $('#navigation').removeClass("fixed"); //sinon on retire la classe "fixNavigation" à <div id="navigation">
