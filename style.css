@@ -32,6 +32,7 @@ html {
 * {
     font-family: 'Roboto', sans-serif;
     color: #000;
+    line-height: 1;
 }
 
 .marten {
@@ -552,13 +553,13 @@ font-size: 18px;
 
 .row figure h2 {
   word-spacing: -0.15em;
-  font-size: 4vw;
+  font-size: 2em;
   font-weight: 300;
   text-shadow: 3px 3px 3px #555;
 }
 
 .row figure h2 span {
-  font-weight: 900;
+  font-weight: 500;
   color : #FFF;
 }
 
@@ -590,8 +591,8 @@ figure h2 {
 
 figure p {
   display: inline-block;
-  margin: 0 0 0.25em;
-  padding: 0.4em ;
+  margin: 2px!important;
+  padding: 0.75em ;
   background: rgba(255,255,255,0.95);
   color: #2f3238;
   text-transform: none;
@@ -670,6 +671,18 @@ figure:hover p {
     right: 2vw;
   }
 
+  .row figure figcaption {
+    padding: 1em;
+  }
+
+  .row figure h2 {
+    font-size: 1.5em;
+  }
+
+  .row figure p {
+    font-size: 0.5em;
+  }
+
 }
 
 
@@ -679,6 +692,21 @@ figure:hover p {
   }
   .eliselogo {
     width: 85vw;
+    height: auto;
+  }
+
+  .row figure figcaption {
+    padding: 0.2em;
+  }
+  .row figure h2 {
+    font-size: 1em;
+  }
+
+  .row figure p {
+    font-size: 0.30em;
+  }
+
+  figcaption div {
     height: auto;
   }
 }
