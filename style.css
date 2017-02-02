@@ -20,6 +20,62 @@ html {
   box-sizing: border-box;
 }
 
+@charset "UTF-8";
+
+@font-face {
+  font-family: "font-icon";
+  src:url("fonts/font-icon.eot");
+  src:url("fonts/font-icon.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font-icon.woff") format("woff"),
+    url("fonts/font-icon.ttf") format("truetype"),
+    url("fonts/font-icon.svg#font-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "font-icon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "font-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin-square:before {
+  content: "\62";
+}
+.icon-link:before {
+  content: "\63";
+}
+.icon-envelope-o:before {
+  content: "\64";
+}
+.icon-github-square:before {
+  content: "\65";
+}
+.icon-twitter-square:before {
+  content: "\66";
+}
+
 @font-face {
     font-family: 'terminalvector';
     src: url(fonts/TerminalVector.ttf);
@@ -491,9 +547,10 @@ font-size: 18px;
 
 .gotop {
     position: fixed;
+    font-size: 1.5em;
     color: #000;
-    right: 2%;
-    bottom: -0.5%;
+    right: 1%;
+    bottom: 1%;
 }
 
 .gotop:hover {
@@ -600,8 +657,8 @@ figure p {
   font-size: 1em;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-360px,0,0);
-  transform: translate3d(-360px,0,0);
+  -webkit-transform: translate3d(-500px,0,0);
+  transform: translate3d(-500px,0,0);
 }
 figure p a {
   background: rgba(255,255,255,0.95);
@@ -645,6 +702,70 @@ figure:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+#contact {
+  position: relative;
+  background-image: linear-gradient(#FFF, #FFF, #AAA);
+}
+
+#contact a:hover, #contact .icon:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#contact .row{
+  text-align: center;
+}
+
+#contact .icon {
+  font-size: 6em;
+  transition: color 0.2s;
+}
+
+#contact .thanks {
+  padding: 50px;
+  font-weight: 300;
+  font-size: 1.25em;
+}
+
+#contact .thx {
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+
+#contact .icon-github-square:hover {
+  color: #573B76;
+}
+#contact .icon-linkedin-square:hover {
+  color: #00618a;
+}
+#contact .icon-twitter-square:hover {
+  color: #4099FF;
+}
+#contact .icon-envelope-o:hover {
+  color: #E91908;
+}
+
+#contact p {
+  padding-bottom: 25px;
+  font-weight: 300;
+}
+
+#footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  color: #AAA;
+  width: 100%;
+  height: 55px;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 
 @media screen and (max-width: 640px) {
