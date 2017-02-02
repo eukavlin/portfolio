@@ -127,6 +127,7 @@ h1 {
   height: 90vh;
   padding: 20px;
   background-image: url(img/TL-001.jpg);
+  background-size: cover;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -643,7 +644,6 @@ figure figcaption {
 
 figure h2 {
   position: relative;
-  padding: 0.5em 0;
 }
 
 figure p {
@@ -725,7 +725,7 @@ figure:hover p {
 }
 
 #contact .thanks {
-  padding: 50px;
+  padding: 25px;
   font-weight: 300;
   font-size: 1.25em;
 }
